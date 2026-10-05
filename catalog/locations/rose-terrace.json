@@ -1,0 +1,29 @@
+{
+  "templateId": "rose-terrace",
+  "name": "Rose Terrace",
+  "description": "A garden of old roses climbs a sunny slope.",
+  "imageKey": "locations/rose-terrace.webp",
+  "type": "PARK",
+  "buildPrice": 960,
+  "allowedAcquisitionSources": [
+    "SHOP"
+  ],
+  "scenes": [
+    {
+      "templateId": "upper-arbor",
+      "name": "Upper Gazebo",
+      "description": "The gazebo overlooks the whole garden and the distant hills.",
+      "imageKey": "locations/rose-terrace/upper-arbor.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "rose-pond",
+      "name": "Rose Pond",
+      "description": "A round stone pond is surrounded by old roses. A small amber object glints on the bottom.",
+      "imageKey": "locations/rose-terrace/rose-pond.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "amber-under-roses",
+      "questButtonText": "Examine the pond"
+    }
+  ]
+}

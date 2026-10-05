@@ -1,0 +1,35 @@
+{
+  "templateId": "stairway-to-nowhere",
+  "name": "Stairway to Nowhere",
+  "description": "A stone staircase rises above a heather moor and ends in midair.",
+  "imageKey": "locations/stairway-to-nowhere.webp",
+  "type": "RUINS",
+  "tags": ["plain"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "first-steps",
+      "name": "Lower Steps",
+      "description": "The same unfamiliar constellation is carved into every step.",
+      "imageKey": "locations/stairway-to-nowhere/first-steps.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "top-landing",
+      "name": "Upper Landing",
+      "description": "The shadow of a door lies on the last step, although there is no door.",
+      "imageKey": "locations/stairway-to-nowhere/top-landing.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "shadow-door",
+      "questButtonText": "Examine the shadow"
+    },
+    {
+      "templateId": "view-below",
+      "name": "View from Above",
+      "description": "From this height, the moor looks like a map of a country found in no atlas.",
+      "imageKey": "locations/stairway-to-nowhere/view-below.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

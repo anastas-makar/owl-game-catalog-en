@@ -1,0 +1,62 @@
+{
+  "templateId": "flounder-by-pool",
+  "title": "Flounder by the Pool",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Unexpected Bather",
+      "description": "It seems the little flounder was drawn into the pool along with the seawater. Now it lies on a wet stone beside the drainage channel, moving its gills. There is still water in the bucket nearby.",
+      "imageKey": "quests/flounder-by-pool/page-10.webp",
+      "options": [
+        {
+          "description": "Pour out the water and wash the flounder into the pool",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Put the flounder in the bucket",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Back in the Water",
+      "description": "The stream from the bucket catches the flounder and carries it over the low rim. The fish pauses on the bottom for a moment, then disappears into the deeper part of the pool.",
+      "imageKey": "quests/flounder-by-pool/page-20.webp",
+      "options": [],
+      "endingId": "flounder-rescued",
+      "scenePatch": {
+        "description": "No one remains on the wet stone. A flat shadow sometimes flickers in the clear seawater.",
+        "imageKey": "locations/mineral-baths/seawater-courtyard-rescued.webp"
+      },
+      "lootButtonText": "Claim the reward",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 15
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Flounder in a Bucket",
+      "description": "The flounder fits neatly across the width of the bucket. There is enough water to carry your unexpected find home.",
+      "imageKey": "quests/flounder-by-pool/page-30.webp",
+      "options": [],
+      "endingId": "flounder-taken",
+      "scenePatch": {
+        "description": "Only a wet stone remains beside the drainage channel.",
+        "imageKey": "locations/mineral-baths/seawater-courtyard-empty.webp"
+      },
+      "lootButtonText": "Take the flounder",
+      "lootBundle": {
+        "gardenItemLoot": {
+          "templateIds": [
+            "flounder"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

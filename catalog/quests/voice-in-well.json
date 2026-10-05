@@ -1,0 +1,54 @@
+{
+  "templateId": "voice-in-well",
+  "title": "Answer from the Well",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Someone's Voice",
+      "description": "The well asks, \"What would you like to hear again?\"",
+      "imageKey": "quests/voice-in-well/page-10.webp",
+      "options": [
+        {
+          "description": "An old friend's laughter",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "The ringing of glass apples",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Kind Echo",
+      "description": "Familiar laughter rises from the depths, and for a few minutes the orchard seems inhabited.",
+      "imageKey": "quests/voice-in-well/page-20.webp",
+      "options": [],
+      "endingId": "friendly-echo",
+      "lootButtonText": "Claim the reward",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 20
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Ringing Apple",
+      "description": "One transparent apple falls from a branch and lands softly beside the well.",
+      "imageKey": "quests/voice-in-well/page-30.webp",
+      "options": [],
+      "endingId": "echo-apple-found",
+      "lootButtonText": "Take the apple",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "echo-apple"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

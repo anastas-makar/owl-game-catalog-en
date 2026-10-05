@@ -1,0 +1,23 @@
+{
+  "templateId": "city-fountain",
+  "name": "City Fountain",
+  "description": "An old fountain with a stone basin and a school of curious fish.",
+  "imageKey": "locations/city-fountain.webp",
+  "type": "FOUNTAIN",
+  "buildPrice": 180,
+  "allowedAcquisitionSources": [
+    "SHOP",
+    "QUEST_REWARD"
+  ],
+  "scenes": [
+    {
+      "templateId": "fish-basin",
+      "name": "Fish in the Basin",
+      "description": "A small oval object glints on the bottom among the fish.",
+      "imageKey": "locations/city-fountain/fish-basin.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "fountain-glint",
+      "questButtonText": "Examine the glint"
+    }
+  ]
+}

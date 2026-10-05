@@ -1,0 +1,68 @@
+{
+  "templateId": "fountain-glint",
+  "title": "Glint on the Bottom",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Something Shiny",
+      "description": "An oval object lies among the lazy fish. You could reach it by hand or try to lift it with a long branch.",
+      "imageKey": "quests/fountain-glint/page-10.webp",
+      "options": [
+        {
+          "description": "Put your hand in the water",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Lift the find with a branch",
+          "targetPageNumber": 30
+        },
+        {
+          "description": "Leave the fish alone",
+          "targetPageNumber": 40
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Quick Teeth",
+      "description": "One fish proves much bolder than the others. It bites your finger, and the find disappears beneath the fins again.",
+      "imageKey": "quests/fountain-glint/page-20.webp",
+      "options": [],
+      "endingId": "bitten-by-fish",
+      "scenePatch": {
+        "description": "The fish circle above the shiny object and clearly have no intention of giving it up.",
+        "imageKey": "locations/city-fountain/fish-basin-guarded.webp"
+      }
+    },
+    {
+      "number": 30,
+      "name": "Cameo",
+      "description": "The branch hooks a small antique cameo. The fish watch it go with disapproving looks.",
+      "imageKey": "quests/fountain-glint/page-30.webp",
+      "options": [],
+      "endingId": "cameo-retrieved",
+      "scenePatch": {
+        "description": "Only pebbles remain on the bottom. The fish swim peacefully again.",
+        "imageKey": "locations/city-fountain/fish-basin-empty.webp"
+      },
+      "lootButtonText": "Take the cameo",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "cameo"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 40,
+      "name": "Quiet Water",
+      "description": "You decide to leave everything alone. The shiny object remains a mystery.",
+      "imageKey": "quests/fountain-glint/page-40.webp",
+      "options": [],
+      "endingId": "left-the-glint"
+    }
+  ]
+}

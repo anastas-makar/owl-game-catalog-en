@@ -1,0 +1,34 @@
+{
+  "templateId": "rainwood-grove",
+  "name": "Rainy Grove",
+  "description": "A fine, warm rain always falls beneath the grove's canopy, even on a clear day.",
+  "imageKey": "locations/rainwood-grove.webp",
+  "type": "PARK",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "dry-circle",
+      "name": "Dry Circle",
+      "description": "A small circle of ground remains perfectly dry, although water drips continuously all around it.",
+      "imageKey": "locations/rainwood-grove/dry-circle.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "rainwood-circle",
+      "questButtonText": "Stand in the dry circle"
+    },
+    {
+      "templateId": "droplet-webs",
+      "name": "Droplet-Covered Webs",
+      "description": "Hundreds of spiderwebs stretch between the bushes, each droplet reflecting its own sky.",
+      "imageKey": "locations/rainwood-grove/droplet-webs.webp",
+      "sceneNumber": 20
+    },
+    {
+      "templateId": "singing-gutter",
+      "name": "Singing Gutter",
+      "description": "A hollow trunk collects rainwater and hums in a low, calm voice.",
+      "imageKey": "locations/rainwood-grove/singing-gutter.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

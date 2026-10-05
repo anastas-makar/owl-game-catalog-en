@@ -1,0 +1,42 @@
+{
+  "templateId": "conservatory",
+  "name": "Conservatory",
+  "description": "A large old building with a concert hall, classrooms, an organ, and endless corridors from which music constantly drifts.",
+  "imageKey": "locations/conservatory.webp",
+  "type": "LANDMARK",
+  "buildPrice": 600,
+  "scenes": [
+    {
+      "templateId": "grand-hall",
+      "name": "Great Hall",
+      "description": "A shimmering orb hangs on the empty stage in front of the orchestra pit. An A-sharp note is clearly visible at its very center.",
+      "imageKey": "locations/conservatory/grand-hall.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "sharp-note-orb",
+      "questButtonText": "Approach the orb"
+    },
+    {
+      "templateId": "practice-room",
+      "name": "Rehearsal Room",
+      "description": "A grand piano, several music stands, and an enormous double bass fill the cramped room. From behind the double bass comes an occasional, distinctly unmusical bleat.",
+      "imageKey": "locations/conservatory/practice-room.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "goat-behind-double-bass",
+      "questButtonText": "Check who is there"
+    },
+    {
+      "templateId": "organ-balcony",
+      "name": "Organ Balcony",
+      "description": "The whole hall is visible from above. The old organ is silent, but sometimes one of its pipes answers footsteps with a quiet, low hum.",
+      "imageKey": "locations/conservatory/organ-balcony.webp",
+      "sceneNumber": 30
+    },
+    {
+      "templateId": "buffet",
+      "name": "Refreshment Counter",
+      "description": "Cups, pastries, and jugs of milk stand behind glass. A faded note hangs on the wall: \"Good cheese begins with good milk and patience.\"",
+      "imageKey": "locations/conservatory/buffet.webp",
+      "sceneNumber": 40
+    }
+  ]
+}

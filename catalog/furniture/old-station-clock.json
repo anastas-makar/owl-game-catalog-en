@@ -1,0 +1,12 @@
+{
+  "templateId": "old-station-clock",
+  "name": "Station Clock",
+  "imageKey": "furniture/old-station-clock.png",
+  "price": 10,
+  "height": 0.200,
+  "width": 0.200,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

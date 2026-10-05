@@ -1,0 +1,35 @@
+{
+  "templateId": "giant-stump",
+  "name": "Giant Stump",
+  "description": "The stump of an ancient tree towers above the young forest like a round tower.",
+  "imageKey": "locations/giant-stump.webp",
+  "type": "LANDMARK",
+  "tags": ["forest"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "root-arches",
+      "name": "Root Arches",
+      "description": "Thick roots form passages large enough for an adult animal to fit through comfortably.",
+      "imageKey": "locations/giant-stump/root-arches.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "ring-platform",
+      "name": "Tree Ring Platform",
+      "description": "Hundreds of rings and several dark marks of unknown origin are visible on the cut surface.",
+      "imageKey": "locations/giant-stump/ring-platform.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "message-in-rings",
+      "questButtonText": "Study the marks"
+    },
+    {
+      "templateId": "fern-balcony",
+      "name": "Fern Balcony",
+      "description": "A whole garden of ferns and red woodland flowers has grown on a ledge of the stump.",
+      "imageKey": "locations/giant-stump/fern-balcony.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

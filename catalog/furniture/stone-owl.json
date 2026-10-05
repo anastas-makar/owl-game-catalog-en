@@ -1,0 +1,12 @@
+{
+  "templateId": "stone-owl",
+  "name": "Stone Owl",
+  "imageKey": "furniture/stone-owl.png",
+  "price": 5,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

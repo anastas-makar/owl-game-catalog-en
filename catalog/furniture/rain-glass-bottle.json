@@ -1,0 +1,12 @@
+{
+  "templateId": "rain-glass-bottle",
+  "name": "Bottle of Eternal Rain",
+  "imageKey": "furniture/rain-glass-bottle.png",
+  "price": 5,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

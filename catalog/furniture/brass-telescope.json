@@ -1,0 +1,12 @@
+{
+  "templateId": "brass-telescope",
+  "name": "Brass Telescope",
+  "imageKey": "furniture/brass-telescope.png",
+  "price": 10,
+  "height": 0.133,
+  "width": 0.200,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

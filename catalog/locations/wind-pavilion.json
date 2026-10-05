@@ -1,0 +1,23 @@
+{
+  "templateId": "wind-pavilion",
+  "name": "Wind Pavilion",
+  "description": "A light pavilion is hung with ribbons and glass bells.",
+  "imageKey": "locations/wind-pavilion.webp",
+  "type": "PAVILION",
+  "buildPrice": 700,
+  "allowedAcquisitionSources": [
+    "SHOP",
+    "QUEST_REWARD"
+  ],
+  "scenes": [
+    {
+      "templateId": "silent-bell",
+      "name": "Silent Bell",
+      "description": "All the bells ring except one, which is perfectly transparent.",
+      "imageKey": "locations/wind-pavilion/silent-bell.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "silent-bell",
+      "questButtonText": "Touch the bell"
+    }
+  ]
+}

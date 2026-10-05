@@ -1,0 +1,15 @@
+{
+  "templateId": "carrot-soup-recipe",
+  "description": "A recipe for simple carrot soup.",
+  "resultSupplyTemplateId": "carrot-soup",
+  "ingredients": [
+    {
+      "supplyTemplateId": "carrot",
+      "amount": 2
+    },
+    {
+      "supplyTemplateId": "honey",
+      "amount": 1
+    }
+  ]
+}

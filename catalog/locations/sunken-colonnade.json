@@ -1,0 +1,21 @@
+{
+  "templateId": "sunken-colonnade",
+  "name": "Sunken Colonnade",
+  "description": "White columns are partly submerged in clear water.",
+  "imageKey": "locations/sunken-colonnade.webp",
+  "type": "RUINS",
+  "tags": ["pond", "shore", "swamp", "lake", "shallow-water"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "mosaic-floor",
+      "name": "Mosaic Floor",
+      "description": "A picture is visible underwater, but part of the pattern is hidden by silt.",
+      "imageKey": "locations/sunken-colonnade/mosaic-floor.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "mosaic-under-silt",
+      "questButtonText": "Clear the mosaic"
+    }
+  ]
+}

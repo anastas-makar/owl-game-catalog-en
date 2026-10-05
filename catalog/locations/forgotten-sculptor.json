@@ -1,0 +1,22 @@
+{
+  "templateId": "forgotten-sculptor",
+  "name": "Monument to a Forgotten Sculptor",
+  "description": "The bronze craftsman holds a hammer, and an unfinished figure lies at his feet.",
+  "imageKey": "locations/forgotten-sculptor.webp",
+  "type": "MONUMENT",
+  "buildPrice": 140,
+  "allowedAcquisitionSources": [
+    "SHOP"
+  ],
+  "scenes": [
+    {
+      "templateId": "hollow-pedestal",
+      "name": "Hollow Pedestal",
+      "description": "One slab of the pedestal gives a hollow sound when tapped.",
+      "imageKey": "locations/forgotten-sculptor/hollow-pedestal.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "secret-in-pedestal",
+      "questButtonText": "Check the slab"
+    }
+  ]
+}

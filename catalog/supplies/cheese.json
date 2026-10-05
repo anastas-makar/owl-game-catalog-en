@@ -1,0 +1,8 @@
+{
+  "templateId": "cheese",
+  "name": "Cheese",
+  "description": "Firm homemade cheese with a golden rind.",
+  "imageKey": "supplies/cheese.webp",
+  "effectType": "HEAL",
+  "effectAmount": 80
+}

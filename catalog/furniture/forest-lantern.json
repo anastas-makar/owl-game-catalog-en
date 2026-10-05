@@ -1,0 +1,12 @@
+{
+  "templateId": "forest-lantern",
+  "name": "Forest Lantern",
+  "imageKey": "furniture/forest-lantern.png",
+  "price": 7,
+  "height": 0.150,
+  "width": 0.125,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

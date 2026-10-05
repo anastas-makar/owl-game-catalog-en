@@ -1,0 +1,9 @@
+{
+  "templateId": "reader-armchair",
+  "name": "Reader's Armchair",
+  "imageKey": "furniture/reader-armchair.png",
+  "price": 30,
+  "height": 0.250,
+  "width": 0.250,
+  "type": "OTHER"
+}

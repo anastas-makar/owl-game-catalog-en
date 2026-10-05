@@ -1,0 +1,8 @@
+{
+  "templateId": "milk",
+  "name": "Milk",
+  "description": "Fresh milk. Drink it straight away or use it to make cheese.",
+  "imageKey": "supplies/milk.webp",
+  "effectType": "HEAL",
+  "effectAmount": 15
+}

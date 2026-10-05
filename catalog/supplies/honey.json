@@ -1,0 +1,8 @@
+{
+  "templateId": "honey",
+  "name": "Honey",
+  "description": "Sweet honey from a garden beehive.",
+  "imageKey": "supplies/honey.webp",
+  "effectType": "HEAL",
+  "effectAmount": 50
+}

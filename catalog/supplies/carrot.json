@@ -1,0 +1,8 @@
+{
+  "templateId": "carrot",
+  "name": "Carrot",
+  "description": "Fresh carrots from the vegetable garden.",
+  "imageKey": "supplies/carrot.webp",
+  "effectType": "HEAL",
+  "effectAmount": 30
+}

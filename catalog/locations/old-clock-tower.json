@@ -1,0 +1,21 @@
+{
+  "templateId": "old-clock-tower",
+  "name": "Old Clock Tower",
+  "description": "A tower with motionless clock hands rises above an empty square.",
+  "imageKey": "locations/old-clock-tower.webp",
+  "type": "LANDMARK",
+  "buildPrice": null,
+  "tags": ["buildings"],
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "clockwork-room",
+      "name": "Mechanism Room",
+      "description": "An occasional metallic tapping can be heard behind a narrow door.",
+      "imageKey": "locations/old-clock-tower/clockwork-room.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "silent-clockwork",
+      "questButtonText": "Examine the mechanism"
+    }
+  ]
+}

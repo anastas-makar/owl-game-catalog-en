@@ -1,0 +1,12 @@
+{
+  "templateId": "copper-weather-vane",
+  "name": "Copper Weather Vane",
+  "imageKey": "furniture/copper-weather-vane.png",
+  "price": 20,
+  "height": 0.150,
+  "width": 0.100,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

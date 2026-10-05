@@ -1,0 +1,10 @@
+{
+  "templateId": "flounder",
+  "name": "Flounder",
+  "description": "A flat sea fish.",
+  "imageKey": "garden-items/flounder.webp",
+  "supplyTemplateId": "flounder",
+  "supplyAmount": 1,
+  "itemType": "FISH",
+  "gardenType": "GARDEN"
+}

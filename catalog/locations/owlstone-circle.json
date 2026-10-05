@@ -1,0 +1,35 @@
+{
+  "templateId": "owlstone-circle",
+  "name": "Circle of Owl Stones",
+  "description": "Eight boulders resembling fluffed-up owls stand in a woodland clearing.",
+  "imageKey": "locations/owlstone-circle.webp",
+  "type": "MONUMENT",
+  "tags": ["glade"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "watching-stones",
+      "name": "Watching Stones",
+      "description": "No matter which direction you approach from, the eyes of the eight stone owls seem to follow you.",
+      "imageKey": "locations/owlstone-circle/watching-stones.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "central-feather",
+      "name": "Stone Feather",
+      "description": "A long stone feather stands at the center of the circle. A thin seam runs along it, and a narrow slit is visible at its base.",
+      "imageKey": "locations/owlstone-circle/central-feather.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "ninth-owl",
+      "questButtonText": "Examine the stone feather"
+    },
+    {
+      "templateId": "moon-moss",
+      "name": "Moon Moss",
+      "description": "The northern sides of the boulders are covered in pale moss that glows even during the day.",
+      "imageKey": "locations/owlstone-circle/moon-moss.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

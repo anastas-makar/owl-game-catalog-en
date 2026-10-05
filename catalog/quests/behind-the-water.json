@@ -1,0 +1,48 @@
+{
+  "templateId": "behind-the-water",
+  "title": "Behind the Curtain of Water",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Slippery Ledge",
+      "description": "The ledge leads to a dry niche, but the stone underfoot is covered in moss.",
+      "imageKey": "quests/behind-the-water/page-10.webp",
+      "options": [
+        {
+          "description": "Walk along the wall",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Jump over the wet patch",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Sundial",
+      "description": "A small stone sundial stands in the dry niche.",
+      "imageKey": "quests/behind-the-water/page-20.webp",
+      "options": [],
+      "endingId": "sundial-found",
+      "lootButtonText": "Take the sundial",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "stone-sundial"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Cold Shower",
+      "description": "You slip and find yourself directly beneath an icy stream. You cannot reach the niche.",
+      "imageKey": "quests/behind-the-water/page-30.webp",
+      "options": [],
+      "endingId": "washed-out"
+    }
+  ]
+}

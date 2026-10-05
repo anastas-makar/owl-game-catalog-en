@@ -1,0 +1,33 @@
+{
+  "templateId": "birch-park",
+  "name": "Birch Park",
+  "description": "A quiet park with paths among young birches.",
+  "imageKey": "locations/birch-park.webp",
+  "type": "PARK",
+  "buildPrice": 250,
+  "scenes": [
+    {
+      "templateId": "birch-alley",
+      "name": "Birch Avenue",
+      "description": "A bright avenue that is pleasant to walk along after a hard day.",
+      "imageKey": "locations/birch-park/birch-alley.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "bench-with-lamp",
+      "name": "Wooden Bench",
+      "description": "A sculptural composition decorates the bench: a curved lantern and a pigeon figure.",
+      "imageKey": "locations/birch-park/bench-with-lamp.webp",
+      "sceneNumber": 20
+    },
+    {
+      "templateId": "roundabout",
+      "name": "Doughnut Path",
+      "description": "It seems the circular path was made solely to put a flowerbed inside the ring.",
+      "imageKey": "locations/birch-park/roundabout.webp",
+      "sceneNumber": 30,
+      "questTemplateId": "old-lady-encounter",
+      "questButtonText": "An elderly woman calls out to you"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "templateId": "sunbeam-under-ice",
+  "title": "Sunbeam Beneath the Ice",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Golden Trail",
+      "description": "The beam leads to a clear bubble frozen deep beneath the warm ice.",
+      "imageKey": "quests/sunbeam-under-ice/page-10.webp",
+      "options": [
+        {
+          "description": "Warm the ice with your palms",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Tap the ice",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Light in a Bubble",
+      "description": "The ice softens, and the bubble of light floats straight into your hands.",
+      "imageKey": "quests/sunbeam-under-ice/page-20.webp",
+      "options": [],
+      "endingId": "sunbeam-captured",
+      "scenePatch": {
+        "description": "The golden strip of light is no longer beneath the warm ice.",
+        "imageKey": "locations/frozen-summer-lake/trapped-sunbeam-gone.webp"
+      },
+      "lootButtonText": "Take the light",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "captured-sunbeam"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Dancing Sunspots",
+      "description": "The beam scatters into dozens of golden spots that dart across the entire lake.",
+      "imageKey": "quests/sunbeam-under-ice/page-30.webp",
+      "options": [],
+      "endingId": "sunbeam-scattered"
+    }
+  ]
+}

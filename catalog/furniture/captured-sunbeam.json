@@ -1,0 +1,12 @@
+{
+  "templateId": "captured-sunbeam",
+  "name": "Captured Sunbeam",
+  "imageKey": "furniture/captured-sunbeam.png",
+  "price": 10,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "templateId": "message-in-rings",
+  "title": "Message in the Rings",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Dark Marks",
+      "description": "The marks repeat at regular intervals and form the silhouette of a table.",
+      "imageKey": "quests/message-in-rings/page-10.webp",
+      "options": [
+        {
+          "description": "Trace the pattern with your finger",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Count the rings",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Wooden Circle",
+      "description": "A round little table slowly rises from the surface, as though grown by the tree itself.",
+      "imageKey": "quests/message-in-rings/page-20.webp",
+      "options": [],
+      "endingId": "ring-table-grown",
+      "scenePatch": {
+        "description": "A pale circle without dark marks remains on the cut surface.",
+        "imageKey": "locations/giant-stump/ring-platform-cleared.webp"
+      },
+      "lootButtonText": "Take the table",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "tree-ring-table"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Age of the Giant",
+      "description": "There are so many rings that you lose count. The mystery of the marks remains unsolved.",
+      "imageKey": "quests/message-in-rings/page-30.webp",
+      "options": [],
+      "endingId": "rings-counted"
+    }
+  ]
+}

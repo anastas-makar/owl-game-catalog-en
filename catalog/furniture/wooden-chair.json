@@ -1,0 +1,9 @@
+{
+  "templateId": "wooden-chair",
+  "name": "Wooden Chair",
+  "imageKey": "furniture/wooden-chair.png",
+  "price": 10,
+  "height": 0.250,
+  "width": 0.250,
+  "type": "OTHER"
+}

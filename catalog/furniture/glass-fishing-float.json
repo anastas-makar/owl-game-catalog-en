@@ -1,0 +1,12 @@
+{
+  "templateId": "glass-fishing-float",
+  "name": "Glass Fishing Float",
+  "imageKey": "furniture/glass-fishing-float.png",
+  "price": 5,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

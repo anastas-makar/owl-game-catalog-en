@@ -1,0 +1,14 @@
+{
+  "templateId": "cheese-recipe",
+  "description": "A recipe for homemade cheese made from milk.",
+  "resultSupplyTemplateId": "cheese",
+  "ingredients": [
+    {
+      "supplyTemplateId": "milk",
+      "amount": 3
+    }
+  ],
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

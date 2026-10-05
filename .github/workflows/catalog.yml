@@ -1,0 +1,222 @@
+name: Validate & Publish Game Catalog
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+  push:
+    branches:
+      - develop
+      - main
+    tags:
+      # Any catalog tag triggers the workflow. The format is validated
+      # strictly below so that an old catalog-v* tag or a tag for another language
+      # cannot be published from the English catalog repository.
+      - 'catalog-*'
+
+permissions:
+  contents: read
+
+env:
+  # The locale is a property of this repository and is passed explicitly to the release.
+  CATALOG_LOCALE: en
+  CATALOG_IMAGE_BASE_URL: https://s3.regru.cloud/owlgame/
+
+jobs:
+  catalog:
+    name: Build and validate catalog
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          # Full history is needed to verify during publication
+          # that the release tag actually belongs to main.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install owl-catalog-tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install \
+            "git+https://github.com/anastas-makar/owl-catalog-tools.git@v0.2.0"
+
+      - name: Determine catalog mode
+        id: catalog_mode
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          REF: ${{ github.ref }}
+          BASE_REF: ${{ github.base_ref }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          VERSION="dev-${GITHUB_SHA:0:12}"
+          REQUIRE_IMAGE_KEYS="false"
+          PUBLISH="false"
+
+          #
+          # Release tag:
+          # - the version is taken from the tag name;
+          # - the locale must match the repository locale;
+          # - only imageKey is allowed;
+          # - the catalog is published after validation.
+          #
+          if [[ "$REF_TYPE" == "tag" ]]; then
+            if [[ ! "$REF_NAME" =~ ^catalog-${CATALOG_LOCALE}-v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+              echo "ERROR: invalid ${CATALOG_LOCALE} catalog tag '$REF_NAME'"
+              echo "Expected format: catalog-${CATALOG_LOCALE}-vX.Y.Z (for example, catalog-${CATALOG_LOCALE}-v0.1.4)"
+              exit 1
+            fi
+
+            VERSION="$REF_NAME"
+            REQUIRE_IMAGE_KEYS="true"
+            PUBLISH="true"
+
+          #
+          # Pull request targeting main:
+          # by this point, all temporary sourceImageUrl values
+          # must have been replaced with imageKey.
+          #
+          elif [[ "$EVENT_NAME" == "pull_request" \
+              && "$BASE_REF" == "main" ]]; then
+            REQUIRE_IMAGE_KEYS="true"
+
+          #
+          # Direct push to main:
+          # only imageKey is allowed here as well.
+          #
+          elif [[ "$EVENT_NAME" == "push" \
+              && "$REF" == "refs/heads/main" ]]; then
+            REQUIRE_IMAGE_KEYS="true"
+          fi
+
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "require_image_keys=$REQUIRE_IMAGE_KEYS" >> "$GITHUB_OUTPUT"
+          echo "publish=$PUBLISH" >> "$GITHUB_OUTPUT"
+
+          echo "Catalog locale: $CATALOG_LOCALE"
+          echo "Catalog version: $VERSION"
+          echo "Require image keys: $REQUIRE_IMAGE_KEYS"
+          echo "Publish: $PUBLISH"
+
+      - name: Verify release tag belongs to main
+        if: steps.catalog_mode.outputs.publish == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin main
+
+          if ! git merge-base \
+              --is-ancestor \
+              "$GITHUB_SHA" \
+              origin/main; then
+            echo "ERROR: release tag is not based on main"
+            exit 1
+          fi
+
+          echo "Release commit belongs to main"
+
+      - name: Build and validate catalog
+        env:
+          CATALOG_VERSION: ${{ steps.catalog_mode.outputs.version }}
+          REQUIRE_IMAGE_KEYS: ${{ steps.catalog_mode.outputs.require_image_keys }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BUILD_ARGS=(
+            --catalog-dir catalog
+            --output build/catalog-release.json
+            --version "$CATALOG_VERSION"
+            --locale "$CATALOG_LOCALE"
+            --commit-sha "$GITHUB_SHA"
+          )
+
+          if [[ "$REQUIRE_IMAGE_KEYS" == "true" ]]; then
+            BUILD_ARGS+=(
+              --require-image-keys
+              --validate-s3-images
+              --image-base-url "$CATALOG_IMAGE_BASE_URL"
+            )
+          fi
+
+          owl-catalog "${BUILD_ARGS[@]}"
+
+      - name: Show release summary
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          import json
+
+          with open(
+              "build/catalog-release.json",
+              encoding="utf-8",
+          ) as file:
+              data = json.load(file)
+
+          print("Version:", data["version"])
+          print("Locale:", data["locale"])
+          print("Schema version:", data["schemaVersion"])
+          print("Commit:", data["commitSha"])
+          print("Hash:", data["contentHash"])
+
+          print("\nEntities:")
+
+          for key, values in data["catalog"].items():
+              print(f"  {key}: {len(values)}")
+          PY
+
+      #
+      # PRODUCTION PUBLICATION
+      #
+      # This step runs only for valid catalog-en-vX.Y.Z tags.
+      #
+      - name: Publish catalog through SSH
+        if: steps.catalog_mode.outputs.publish == 'true'
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          install -m 700 -d ~/.ssh
+
+          printf '%s\n' "$SSH_PRIVATE_KEY" \
+            > ~/.ssh/id_ed25519
+
+          chmod 600 ~/.ssh/id_ed25519
+
+          printf '%s\n' "$SSH_KNOWN_HOSTS" \
+            > ~/.ssh/known_hosts
+
+          REMOTE_FILE="/tmp/owl-catalog-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json"
+
+          scp \
+            -P "$SSH_PORT" \
+            build/catalog-release.json \
+            "$SSH_USER@$SSH_HOST:$REMOTE_FILE"
+
+          ssh \
+            -p "$SSH_PORT" \
+            "$SSH_USER@$SSH_HOST" \
+            "set -e;
+             trap 'rm -f \"$REMOTE_FILE\"' EXIT;
+             /usr/local/bin/publish-owl-catalog \"$REMOTE_FILE\""

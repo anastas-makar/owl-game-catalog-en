@@ -1,0 +1,62 @@
+{
+  "templateId": "mosaic-under-silt",
+  "title": "Pattern Beneath the Water",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Layer of Silt",
+      "description": "The outline of a bird can be made out beneath a thin layer of silt.",
+      "imageKey": "quests/mosaic-under-silt/page-10.webp",
+      "options": [
+        {
+          "description": "Brush away the silt with your palm",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Lift the edge of a loose tile",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Complete Picture",
+      "description": "A mosaic of a flying owl is revealed on the floor. The pattern remains in place.",
+      "imageKey": "quests/mosaic-under-silt/page-20.webp",
+      "options": [],
+      "endingId": "mosaic-cleaned",
+      "scenePatch": {
+        "description": "The cleaned mosaic of a flying owl is visible beneath the clear water.",
+        "imageKey": "locations/sunken-colonnade/mosaic-cleaned.webp"
+      },
+      "lootButtonText": "Claim the reward",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 15
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Detached Fragment",
+      "description": "The tile comes easily out of the old mortar. Part of a golden wing remains on it.",
+      "imageKey": "quests/mosaic-under-silt/page-30.webp",
+      "options": [],
+      "endingId": "fragment-taken",
+      "scenePatch": {
+        "description": "One small fragment is missing from the mosaic.",
+        "imageKey": "locations/sunken-colonnade/mosaic-missing-piece.webp"
+      },
+      "lootButtonText": "Take the fragment",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "mosaic-fragment"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

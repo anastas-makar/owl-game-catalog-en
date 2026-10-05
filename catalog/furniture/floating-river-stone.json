@@ -1,0 +1,12 @@
+{
+  "templateId": "floating-river-stone",
+  "name": "Floating River Stone",
+  "imageKey": "furniture/floating-river-stone.png",
+  "price": 1,
+  "height": 0.100,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

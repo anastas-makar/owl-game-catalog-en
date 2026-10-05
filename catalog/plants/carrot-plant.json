@@ -1,0 +1,9 @@
+{
+  "templateId": "carrot-plant",
+  "name": "Carrot",
+  "description": "A vegetable garden plant that yields carrots and new seeds.",
+  "imageKey": "plants/carrot-plant.webp",
+  "supplyTemplateId": "carrot",
+  "supplyAmount": 3,
+  "seedAmount": 2
+}

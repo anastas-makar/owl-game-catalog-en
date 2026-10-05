@@ -1,0 +1,52 @@
+{
+  "templateId": "ninth-owl",
+  "title": "Ninth Owl",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Stone Key",
+      "description": "A flat stone plate lies at the base of the feather. Its beveled edge fits the slit between the two halves exactly.",
+      "imageKey": "quests/ninth-owl/page-10.webp",
+      "options": [
+        {
+          "description": "Insert the plate into the slit",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Shine a light into the slit",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Little Guardian",
+      "description": "The plate slides all the way in, and something clicks inside. The stone feather opens along the seam into two halves. A small owl figurine sits in a recess at its base.",
+      "imageKey": "quests/ninth-owl/page-20.webp",
+      "options": [],
+      "endingId": "stone-owl-found",
+      "scenePatch": {
+        "description": "The two halves of the stone feather are open. The recess between them is empty.",
+        "imageKey": "locations/owlstone-circle/central-feather-open.webp"
+      },
+      "lootButtonText": "Take the owl",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "stone-owl"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Eyes in the Dark",
+      "description": "The beam slips between the two halves. A pair of stone eyes flashes in the depths for a moment, but the hidden mechanism does not move.",
+      "imageKey": "quests/ninth-owl/page-30.webp",
+      "options": [],
+      "endingId": "eyes-lit"
+    }
+  ]
+}

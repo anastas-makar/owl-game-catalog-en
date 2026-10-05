@@ -1,0 +1,64 @@
+{
+  "templateId": "goat-behind-double-bass",
+  "title": "Goat Behind the Double Bass",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Suspicious Double Bass",
+      "description": "Bleating comes from behind the double bass again. The instrument sways slightly, although there is neither a draft nor any musicians in the room.",
+      "imageKey": "quests/goat-behind-double-bass/page-10.webp",
+      "options": [
+        {
+          "description": "Play a gentle scale on the grand piano",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Look behind the double bass at once",
+          "targetPageNumber": 30
+        },
+        {
+          "description": "Pretend you heard nothing",
+          "targetPageNumber": 40
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Musical Goat",
+      "description": "On the third note, a small goat cautiously emerges from behind the double bass. It listens to the rest of the scale, nods contentedly, and resolutely follows you. It seems you now have a very musical milk supplier.",
+      "imageKey": "quests/goat-behind-double-bass/page-20.webp",
+      "options": [],
+      "endingId": "goat-followed-music",
+      "scenePatch": {
+        "description": "The space behind the double bass is now empty. Only a few hoofprints and a forgotten sheet of music remain on the floor.",
+        "imageKey": "locations/conservatory/practice-room-after-goat.webp"
+      },
+      "lootButtonText": "Take the goat",
+      "lootBundle": {
+        "gardenItemLoot": {
+          "templateIds": [
+            "musical-goat"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Awkward Introduction",
+      "description": "You abruptly peer behind the double bass and come nose to nose with a goat. The goat bleats indignantly, leaps over a stool, and disappears into the corridor. A minute later, it is behind the double bass again, but now regards you with much greater suspicion.",
+      "imageKey": "quests/goat-behind-double-bass/page-30.webp",
+      "options": [],
+      "endingId": "goat-startled"
+    },
+    {
+      "number": 40,
+      "name": "Rehearsal Continues",
+      "description": "You decide not to interfere. After a while, another quiet bleat comes from behind the double bass, matching the pitch of the old grand piano surprisingly well.",
+      "imageKey": "quests/goat-behind-double-bass/page-40.webp",
+      "options": [],
+      "endingId": "left-goat-alone"
+    }
+  ]
+}

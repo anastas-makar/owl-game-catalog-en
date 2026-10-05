@@ -1,0 +1,21 @@
+{
+  "templateId": "foggy-pier",
+  "name": "Foggy Pier",
+  "description": "A wooden pier stretches into gray water and dissolves in the fog.",
+  "imageKey": "locations/foggy-pier.webp",
+  "type": "WATER_LOCATION",
+  "tags": ["shore"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "mooring-post",
+      "name": "Mooring Post",
+      "description": "A wet rope is tied to the post and runs beneath the decking.",
+      "imageKey": "locations/foggy-pier/mooring-post.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "rope-under-pier",
+      "questButtonText": "Pull the rope"
+    }
+  ]
+}

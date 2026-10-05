@@ -1,0 +1,12 @@
+{
+  "templateId": "crystal-bell",
+  "name": "Crystal Bell",
+  "imageKey": "furniture/crystal-bell.png",
+  "price": 10,
+  "height": 0.150,
+  "width": 0.100,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

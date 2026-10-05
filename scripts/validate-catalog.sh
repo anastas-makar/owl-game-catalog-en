@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+REPO_ROOT=$(dirname "$SCRIPT_DIR")
+
+cd "$REPO_ROOT"
+
+python3 -m owl_catalog_tools \
+  --catalog-dir catalog \
+  --output build/catalog-release.json \
+  --version local \
+  --locale en \
+  --commit-sha local
+
+printf '\nCatalog validation OK\n'

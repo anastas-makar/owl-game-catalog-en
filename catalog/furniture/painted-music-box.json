@@ -1,0 +1,12 @@
+{
+  "templateId": "painted-music-box",
+  "name": "Painted Music Box",
+  "imageKey": "furniture/painted-music-box.png",
+  "price": 5,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "templateId": "frozen-summer-lake",
+  "name": "Summer Ice Lake",
+  "description": "At the height of summer, the lake is covered with clear, warm ice.",
+  "imageKey": "locations/frozen-summer-lake.webp",
+  "type": "WATER_LOCATION",
+  "tags": ["pond"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "warm-ice",
+      "name": "Warm Ice",
+      "description": "The ice feels warm to the touch and yields slightly underfoot.",
+      "imageKey": "locations/frozen-summer-lake/warm-ice.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "trapped-sunbeam",
+      "name": "Captured Sunbeam",
+      "description": "A golden strip of light moves slowly beneath the ice.",
+      "imageKey": "locations/frozen-summer-lake/trapped-sunbeam.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "sunbeam-under-ice",
+      "questButtonText": "Follow the beam"
+    },
+    {
+      "templateId": "summer-reeds",
+      "name": "Summer Reeds",
+      "description": "Green reeds full of dragonflies grow along the edges of the frozen lake.",
+      "imageKey": "locations/frozen-summer-lake/summer-reeds.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

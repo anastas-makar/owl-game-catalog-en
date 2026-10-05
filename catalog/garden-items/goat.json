@@ -1,0 +1,10 @@
+{
+  "templateId": "goat",
+  "name": "Goat",
+  "description": "A friendly goat. Produces milk.",
+  "imageKey": "garden-items/goat.webp",
+  "supplyTemplateId": "milk",
+  "supplyAmount": 1,
+  "itemType": "ANIMAL_HOUSE",
+  "gardenType": "GARDEN"
+}

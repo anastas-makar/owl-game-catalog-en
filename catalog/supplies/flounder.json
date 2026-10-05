@@ -1,0 +1,8 @@
+{
+  "templateId": "flounder",
+  "name": "Flounder",
+  "description": "A nutritious sea fish, but it should not be eaten raw.",
+  "imageKey": "supplies/flounder.webp",
+  "effectType": "HEAL",
+  "effectAmount": 10
+}

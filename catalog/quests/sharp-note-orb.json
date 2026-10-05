@@ -1,0 +1,140 @@
+{
+  "templateId": "sharp-note-orb",
+  "title": "A-Sharp",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Shimmering Orb",
+      "description": "A strange shimmering orb hangs in the air before you. Rainbow highlights ripple across its surface, and an A-sharp note is clearly visible at its very center. The orb seems to be waiting for someone to sing it.",
+      "imageKey": "quests/sharp-note-orb/page-10.webp",
+      "options": [
+        {
+          "description": "Sing A-sharp",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Leave the strange orb alone",
+          "targetPageNumber": 100
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Raccoon",
+      "description": "As soon as you sing A-sharp, the orb shudders and turns into a surprised raccoon. The raccoon shimmers with the same colors and listens closely. Now you clearly need to choose the next note.",
+      "imageKey": "quests/sharp-note-orb/page-20.webp",
+      "options": [
+        {
+          "description": "Try a semitone higher",
+          "targetPageNumber": 30
+        },
+        {
+          "description": "Try a semitone lower",
+          "targetPageNumber": 40
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "name": "Brick",
+      "description": "At the higher note, the raccoon silently collapses into a red brick. The brick hangs in the air, trembling slightly in time with your voice.",
+      "imageKey": "quests/sharp-note-orb/page-30.webp",
+      "options": [
+        {
+          "description": "Go up another semitone",
+          "targetPageNumber": 50
+        },
+        {
+          "description": "Now try lower",
+          "targetPageNumber": 60
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "name": "Bucket",
+      "description": "At the lower note, the raccoon stretches, rings, and turns into an ordinary tin bucket. The bucket hums melodiously in reply.",
+      "imageKey": "quests/sharp-note-orb/page-40.webp",
+      "options": [
+        {
+          "description": "Go down another semitone",
+          "targetPageNumber": 70
+        },
+        {
+          "description": "Now try higher",
+          "targetPageNumber": 60
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "name": "Porcelain Rooster",
+      "description": "You sing an even higher note. The brick flashes and becomes a little porcelain rooster. The rooster crows angrily at exactly your pitch, then the orb reappears above the stage. It seems you went too high.",
+      "imageKey": "quests/sharp-note-orb/page-50.webp",
+      "options": [],
+      "endingId": "too-high"
+    },
+    {
+      "number": 60,
+      "name": "Almost in Harmony",
+      "description": "As soon as you change direction, the object begins turning rapidly from brick to bucket to raccoon and back again. The rainbow highlights form the familiar A-sharp symbol. It seems you should now return to the original note.",
+      "imageKey": "quests/sharp-note-orb/page-60.webp",
+      "options": [
+        {
+          "description": "Return to A-sharp",
+          "targetPageNumber": 80
+        },
+        {
+          "description": "Continue at random",
+          "targetPageNumber": 90
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "name": "Rubber Boot",
+      "description": "You go even lower. The bucket flattens and becomes an enormous rubber boot. The boot hums in a deep bass, falls to the floor, and immediately vanishes. The orb reappears above the stage. It seems you went too low.",
+      "imageKey": "quests/sharp-note-orb/page-70.webp",
+      "options": [],
+      "endingId": "too-low"
+    },
+    {
+      "number": 80,
+      "name": "Cheesy Harmony",
+      "description": "A-sharp completes the strange sequence. The rainbow object flashes with golden light, briefly becomes an enormous wheel of cheese, then scatters into musical notes. A neatly written recipe for cheese made from milk remains on the music stand.",
+      "imageKey": "quests/sharp-note-orb/page-80.webp",
+      "options": [],
+      "endingId": "cheese-recipe-revealed",
+      "scenePatch": {
+        "description": "The shimmering orb has disappeared. A golden A-sharp note remains on the music stand.",
+        "imageKey": "locations/conservatory/grand-hall-after-orb.webp"
+      },
+      "lootButtonText": "Take the recipe",
+      "lootBundle": {
+        "recipeLoot": {
+          "templateIds": [
+            "cheese-recipe"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 90,
+      "name": "Blizzard of Notes",
+      "description": "You keep changing notes without a system. The orb cannot stand it, sneezes a cloud of colorful notes, and returns to its original state. It seems random trial and error will not persuade it.",
+      "imageKey": "quests/sharp-note-orb/page-90.webp",
+      "options": [],
+      "endingId": "random-notes"
+    },
+    {
+      "number": 100,
+      "name": "Silence",
+      "description": "You decide not to experiment with unfamiliar musical magic. The orb continues shimmering peacefully above the stage.",
+      "imageKey": "quests/sharp-note-orb/page-100.webp",
+      "options": [],
+      "endingId": "left-orb-alone"
+    }
+  ]
+}

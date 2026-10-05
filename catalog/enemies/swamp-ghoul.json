@@ -1,0 +1,12 @@
+{
+  "templateId": "swamp-ghoul",
+  "name": "Swamp Ghoul",
+  "description": "A dangerous opponent lurking near swamps and old roads.",
+  "imageKey": "enemies/swamp-ghoul.png",
+  "health": 400,
+  "damage": 400,
+  "tags": [
+    "swamp",
+    "undead"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "templateId": "ravens-cache",
+  "title": "Raven Cache",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Shiny Pile",
+      "description": "A carved wooden bird lies among the feathers. The beating of wings comes from above.",
+      "imageKey": "quests/ravens-cache/page-10.webp",
+      "options": [
+        {
+          "description": "Quickly grab the figurine",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Leave a few pretty stones in exchange",
+          "targetPageNumber": 30
+        },
+        {
+          "description": "Leave the cache alone",
+          "targetPageNumber": 40
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Angry Owners",
+      "description": "The ravens raise an uproar, and you have to drop the figurine.",
+      "imageKey": "quests/ravens-cache/page-20.webp",
+      "options": [],
+      "endingId": "ravens-angry"
+    },
+    {
+      "number": 30,
+      "name": "Fair Exchange",
+      "description": "The ravens carefully count the shiny stones and allow you to take the carved figurine.",
+      "imageKey": "quests/ravens-cache/page-30.webp",
+      "options": [],
+      "endingId": "raven-traded",
+      "lootButtonText": "Take the figurine",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "carved-raven"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 40,
+      "name": "Untouched Cache",
+      "description": "You move away from the niche without disturbing its owners.",
+      "imageKey": "quests/ravens-cache/page-40.webp",
+      "options": [],
+      "endingId": "cache-left"
+    }
+  ]
+}

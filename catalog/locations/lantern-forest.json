@@ -1,0 +1,35 @@
+{
+  "templateId": "lantern-forest",
+  "name": "Lantern Forest",
+  "description": "Glowing fruits resembling little lanterns hang from the branches of old spruce trees.",
+  "imageKey": "locations/lantern-forest.webp",
+  "type": "PARK",
+  "buildPrice": null,
+  "tags": ["forest"],
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "glowing-path",
+      "name": "Glowing Path",
+      "description": "Fallen needles shimmer underfoot, forming a winding path.",
+      "imageKey": "locations/lantern-forest/glowing-path.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "hollow-fir",
+      "name": "Hollow of an Old Spruce",
+      "description": "Warm light pours from a deep hollow, although no fire or lamp is visible inside.",
+      "imageKey": "locations/lantern-forest/hollow-fir.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "light-in-hollow",
+      "questButtonText": "Look into the hollow"
+    },
+    {
+      "templateId": "moth-clearing",
+      "name": "Night Moth Glade",
+      "description": "Large silvery moths circle slowly among the glowing fruits.",
+      "imageKey": "locations/lantern-forest/moth-clearing.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

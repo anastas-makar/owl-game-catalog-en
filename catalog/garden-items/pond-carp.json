@@ -1,0 +1,10 @@
+{
+  "templateId": "pond-carp",
+  "name": "Carp",
+  "description": "Carp that live in a pond and yield fish.",
+  "imageKey": "garden-items/pond-carp.webp",
+  "supplyTemplateId": "carp",
+  "supplyAmount": 1,
+  "itemType": "FISH",
+  "gardenType": "POOL"
+}

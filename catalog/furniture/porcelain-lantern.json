@@ -1,0 +1,12 @@
+{
+  "templateId": "porcelain-lantern",
+  "name": "Porcelain Lantern",
+  "imageKey": "furniture/porcelain-lantern.png",
+  "price": 5,
+  "height": 0.200,
+  "width": 0.200,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

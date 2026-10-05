@@ -1,0 +1,25 @@
+{
+  "templateId": "hill-observatory",
+  "name": "Hilltop Observatory",
+  "description": "A small dome stands above the clouds and city lights.",
+  "imageKey": "locations/hill-observatory.webp",
+  "type": "LANDMARK",
+  "tags": ["hill"],
+  "buildPrice": 320,
+  "allowedAcquisitionSources": [
+    "POUCH",
+    "SHOP",
+    "QUEST_REWARD"
+  ],
+  "scenes": [
+    {
+      "templateId": "open-dome",
+      "name": "Open Dome",
+      "description": "The telescope points toward a patch of sky where one star twinkles especially brightly.",
+      "imageKey": "locations/hill-observatory/open-dome.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "fallen-star-chart",
+      "questButtonText": "Aim the telescope"
+    }
+  ]
+}

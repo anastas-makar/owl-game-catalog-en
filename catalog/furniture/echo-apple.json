@@ -1,0 +1,12 @@
+{
+  "templateId": "echo-apple",
+  "name": "Ringing Apple",
+  "imageKey": "furniture/echo-apple.png",
+  "price": 5,
+  "height": 0.125,
+  "width": 0.125,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

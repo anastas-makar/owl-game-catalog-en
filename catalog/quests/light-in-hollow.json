@@ -1,0 +1,52 @@
+{
+  "templateId": "light-in-hollow",
+  "title": "Light in the Hollow",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Warm Glow",
+      "description": "A glowing fruit hangs deep in the hollow. The thin roots around it move slowly.",
+      "imageKey": "quests/light-in-hollow/page-10.webp",
+      "options": [
+        {
+          "description": "Gently part the roots",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Pluck the fruit in one motion",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Forest Lantern",
+      "description": "The roots part, and the fruit becomes a little lantern filled with living golden light.",
+      "imageKey": "quests/light-in-hollow/page-20.webp",
+      "options": [],
+      "endingId": "forest-lantern-found",
+      "scenePatch": {
+        "description": "The hollow is empty, but a soft golden glow remains in the wood.",
+        "imageKey": "locations/lantern-forest/hollow-fir-empty.webp"
+      },
+      "lootButtonText": "Take the lantern",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "forest-lantern"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Extinguished Fruit",
+      "description": "The roots snap shut; the fruit falls and immediately goes dark.",
+      "imageKey": "quests/light-in-hollow/page-30.webp",
+      "options": [],
+      "endingId": "light-extinguished"
+    }
+  ]
+}

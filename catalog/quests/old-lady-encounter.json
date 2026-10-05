@@ -1,0 +1,52 @@
+{
+  "templateId": "old-lady-encounter",
+  "title": "Woman with Bags",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "The Cats Ruined Everything",
+      "description": "The woman carries an enormous bag with two cats poking out. The cats are tangled in yarn and yowling. A pet carrier and some kind of milk can stand nearby. The woman asks for help.",
+      "imageKey": "quests/old-lady-encounter/page-10.webp",
+      "options": [
+        {
+          "description": "Agree to help",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Run away",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Exhausting Evening",
+      "description": "You spend several hours untangling yarn and catching cats. The woman thanks you and gives you a porcelain lantern that you had mistaken for a milk can.",
+      "imageKey": "quests/old-lady-encounter/page-20.webp",
+      "options": [],
+      "endingId": "porcelain-lantern-found",
+      "lootButtonText": "Take the lantern",
+      "scenePatch": {
+        "description": "The woman is walking with her cats. A pet carrier and a large bag stand nearby.",
+        "imageKey": "locations/birch-park/roundabout-lantern-gone.webp"
+      },
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "porcelain-lantern"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Successful Escape",
+      "description": "No regrets. A fresh wind strikes your face.",
+      "imageKey": "quests/old-lady-encounter/page-30.webp",
+      "options": [],
+      "endingId": "escape"
+    }
+  ]
+}

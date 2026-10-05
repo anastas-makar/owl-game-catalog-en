@@ -1,0 +1,52 @@
+{
+  "templateId": "stone-that-falls",
+  "title": "The Stone That Falls",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Weightless Stone",
+      "description": "The stone trembles at your touch and begins to rotate slowly.",
+      "imageKey": "quests/stone-that-falls/page-10.webp",
+      "options": [
+        {
+          "description": "Pull the stone down",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Push it toward the stream",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Obedient Weight",
+      "description": "The stone shrinks and stays hovering above your palm, responding to the slightest movement.",
+      "imageKey": "quests/stone-that-falls/page-20.webp",
+      "options": [],
+      "endingId": "floating-stone-taken",
+      "scenePatch": {
+        "description": "A noticeable empty space remains among the floating stones.",
+        "imageKey": "locations/upside-down-waterfall/floating-stones-gap.webp"
+      },
+      "lootButtonText": "Take the stone",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "floating-river-stone"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Path to the Clouds",
+      "description": "The stream catches the stone, and it quickly vanishes into the clouds.",
+      "imageKey": "quests/stone-that-falls/page-30.webp",
+      "options": [],
+      "endingId": "stone-ascended"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "templateId": "silent-clockwork",
+  "title": "Stopped Clockwork",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Box Between the Gears",
+      "description": "A small wooden box reinforced with iron bands is jammed between the gears. Its lid cracked on impact, but the rusty ironwork still holds it in place. A faded stamp remains on its side: \"Bright River Station\".",
+      "imageKey": "quests/silent-clockwork/page-10.webp",
+      "options": [
+        {
+          "description": "Pull the lever",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Carefully free the box",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Clattering Gears",
+      "description": "The mechanism shudders and turns with a crunch. The box splits apart, and its contents plunge into the dark shaft. The misaligned gears finally come to a complete stop.",
+      "imageKey": "quests/silent-clockwork/page-20.webp",
+      "options": [],
+      "endingId": "clockwork-jammed",
+      "scenePatch": {
+        "description": "The mechanism is misaligned and no longer taps. Splinters and scraps of felt lining remain between the teeth.",
+        "imageKey": "locations/old-clock-tower/clockwork-jammed.webp"
+      }
+    },
+    {
+      "number": 30,
+      "name": "Old Clock",
+      "description": "Beneath the bent lid, you find a small station clock. The iron reinforcement and thick felt lining absorbed the impact: the case is scuffed, but the glass and mechanism are intact. The black hands have stopped at ten past ten.",
+      "imageKey": "quests/silent-clockwork/page-30.webp",
+      "options": [],
+      "endingId": "station-clock-found",
+      "lootButtonText": "Take the clock",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "old-station-clock"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

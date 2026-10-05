@@ -1,0 +1,52 @@
+{
+  "templateId": "rainwood-circle",
+  "title": "Place Without Rain",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Silence in the Circle",
+      "description": "Inside the circle, the sound of rain and the smell of wet earth disappear. A motionless droplet hangs in the air, and a small empty bottle lies in the grass beneath it.",
+      "imageKey": "quests/rainwood-circle/page-10.webp",
+      "options": [
+        {
+          "description": "Catch the droplet in the bottle",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Touch the droplet",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Rain in a Bottle",
+      "description": "The droplet falls into the bottle and breaks into countless tiny drops. A quiet rain now falls continuously inside the glass, but the water never fills the vessel.",
+      "imageKey": "quests/rainwood-circle/page-20.webp",
+      "options": [],
+      "endingId": "rain-bottled",
+      "lootButtonText": "Take the bottle",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "rain-glass-bottle"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Sudden Downpour",
+      "description": "The droplet bursts, and a real downpour drenches the dry circle for a few seconds.",
+      "imageKey": "quests/rainwood-circle/page-30.webp",
+      "options": [],
+      "endingId": "circle-flooded",
+      "scenePatch": {
+        "description": "The ground inside the circle is wet, but the new rain once again avoids it.",
+        "imageKey": "locations/rainwood-grove/dry-circle-wet.webp"
+      }
+    }
+  ]
+}

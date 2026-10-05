@@ -1,0 +1,34 @@
+{
+  "templateId": "echo-orchard",
+  "name": "Echo Orchard",
+  "description": "An abandoned orchard repeats sounds with a delay of several minutes.",
+  "imageKey": "locations/echo-orchard.webp",
+  "type": "PARK",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "late-birds",
+      "name": "Belated Birds",
+      "description": "Birdsong can be heard after the flock has already vanished beyond the horizon.",
+      "imageKey": "locations/echo-orchard/late-birds.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "answering-well",
+      "name": "Answering Well",
+      "description": "The well returns not the words spoken to it, but someone's quiet reply.",
+      "imageKey": "locations/echo-orchard/answering-well.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "voice-in-well",
+      "questButtonText": "Ask the well a question"
+    },
+    {
+      "templateId": "glass-apples",
+      "name": "Glass Apples",
+      "description": "Transparent apples grow on one tree, ringing with every gust of wind.",
+      "imageKey": "locations/echo-orchard/glass-apples.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

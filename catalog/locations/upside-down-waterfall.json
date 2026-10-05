@@ -1,0 +1,35 @@
+{
+  "templateId": "upside-down-waterfall",
+  "name": "Upside-Down Waterfall",
+  "description": "A stream of water rises from the lake toward the clouds and vanishes high above.",
+  "imageKey": "locations/upside-down-waterfall.webp",
+  "type": "WATERFALL",
+  "buildPrice": null,
+  "tags": ["lake", "pool"],
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "rising-stream",
+      "name": "Rising Stream",
+      "description": "Droplets fall upward, gaining speed as they approach the clouds.",
+      "imageKey": "locations/upside-down-waterfall/rising-stream.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "floating-stones",
+      "name": "Floating Stones",
+      "description": "Wet river stones of various sizes hang motionless above the shore.",
+      "imageKey": "locations/upside-down-waterfall/floating-stones.webp",
+      "sceneNumber": 20,
+      "questTemplateId": "stone-that-falls",
+      "questButtonText": "Touch a floating stone"
+    },
+    {
+      "templateId": "empty-riverbed",
+      "name": "Dry Riverbed",
+      "description": "Beyond the lake stretches a riverbed through which water once flowed in the usual way.",
+      "imageKey": "locations/upside-down-waterfall/empty-riverbed.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

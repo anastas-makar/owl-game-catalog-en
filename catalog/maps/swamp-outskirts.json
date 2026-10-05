@@ -1,0 +1,76 @@
+{
+  "templateId": "swamp-outskirts",
+  "name": "Swamp Outskirts",
+  "imageKey": "maps/swamp-outskirts.webp",
+  "locationSlots": [
+    {
+      "slotId": "camp",
+      "x": 0.25,
+      "y": 0.35,
+      "mode": "FIXED",
+      "fixedLocationTemplateId": "abandoned-camp"
+    },
+    {
+      "slotId": "park",
+      "x": 0.70,
+      "y": 0.50,
+      "mode": "RANDOM",
+      "allowedTypes": [
+        "PARK"
+      ]
+    },
+    {
+      "slotId": "swamp-location",
+      "x": 0.25,
+      "y": 0.41,
+      "mode": "RANDOM",
+      "requiredTags": [
+        "swamp"
+      ]
+    }
+  ],
+  "enemySlots": [
+    {
+      "slotId": "enemy-1",
+      "x": 0.38,
+      "y": 0.46,
+      "requiredTags": [
+        "swamp",
+        "weak"
+      ]
+    },
+    {
+      "slotId": "enemy-2",
+      "x": 0.61,
+      "y": 0.67,
+      "requiredTags": [
+        "swamp"
+      ]
+    }
+  ],
+  "completionMedalTemplateId": "first-liberation",
+  "completionLootBundle": {
+    "gardenItemLoot": {
+      "templateIds": [
+        "garden-beehive"
+      ],
+      "amount": 1
+    },
+    "plantLoot": {
+      "templateIds": [
+        "carrot-plant"
+      ],
+      "amount": 1
+    },
+    "locationLoot": {
+      "templateIds": [
+        "conservatory"
+      ],
+      "amount": 1,
+      "dropChance": 0.1
+    },
+    "diamondLoot": {
+      "amount": 250
+    }
+  }
+}

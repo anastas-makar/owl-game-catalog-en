@@ -1,0 +1,20 @@
+{
+  "templateId": "raven-grotto",
+  "name": "Raven Grotto",
+  "description": "A dark grotto is marked with countless scratches resembling bird tracks.",
+  "imageKey": "locations/raven-grotto.webp",
+  "type": "CAVE",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "feather-niche",
+      "name": "Feather Niche",
+      "description": "Feathers, buttons, and shiny pebbles are piled in a stone niche.",
+      "imageKey": "locations/raven-grotto/feather-niche.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "ravens-cache",
+      "questButtonText": "Examine the cache"
+    }
+  ]
+}

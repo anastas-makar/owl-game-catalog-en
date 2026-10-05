@@ -1,0 +1,62 @@
+{
+  "templateId": "herbalists-keepsake",
+  "title": "Herbalist's Keepsake",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Amber Drop",
+      "description": "A tiny flower is preserved in the clear amber. A rain-blurred note lies nearby.",
+      "imageKey": "quests/herbalists-keepsake/page-10.webp",
+      "options": [
+        {
+          "description": "Take the amber",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Place it among the herbs",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Herbalist's Amber",
+      "description": "The stone is warm, and the flower inside it remains fresh.",
+      "imageKey": "quests/herbalists-keepsake/page-20.webp",
+      "options": [],
+      "endingId": "amber-taken",
+      "scenePatch": {
+        "description": "Only the neatly arranged dried herbs remain on the stone.",
+        "imageKey": "locations/foxglove-ravine/herbalists-stone-empty.webp"
+      },
+      "lootButtonText": "Take the amber",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "herbalists-amber"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Purple Blossom",
+      "description": "As soon as the amber touches the herbs, a ring of young flowers blooms around you.",
+      "imageKey": "quests/herbalists-keepsake/page-30.webp",
+      "options": [],
+      "endingId": "flowers-restored",
+      "scenePatch": {
+        "description": "The stone is surrounded by fresh purple flowers.",
+        "imageKey": "locations/foxglove-ravine/herbalists-stone-blooming.webp"
+      },
+      "lootButtonText": "Claim the reward",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 20
+        }
+      }
+    }
+  ]
+}

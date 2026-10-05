@@ -1,0 +1,9 @@
+{
+  "templateId": "small-refrigerator",
+  "name": "Small Refrigerator",
+  "imageKey": "furniture/small-refrigerator.png",
+  "price": 90,
+  "height": 0.300,
+  "width": 0.300,
+  "type": "REFRIGERATOR"
+}

@@ -1,0 +1,21 @@
+{
+  "templateId": "mirror-pond",
+  "name": "Mirror Pond",
+  "description": "The pond's surface reflects the sky even when fog swirls above the water.",
+  "imageKey": "locations/mirror-pond.webp",
+  "type": "WATER_LOCATION",
+  "tags": ["pond"],
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "wrong-reflection",
+      "name": "Unfamiliar Reflection",
+      "description": "A tower that is nowhere nearby is reflected in the depths.",
+      "imageKey": "locations/mirror-pond/wrong-reflection.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "tower-in-reflection",
+      "questButtonText": "Peer into the reflection"
+    }
+  ]
+}

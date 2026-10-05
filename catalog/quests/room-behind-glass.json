@@ -1,0 +1,52 @@
+{
+  "templateId": "room-behind-glass",
+  "title": "Room Behind Glass",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Three Quiet Knocks",
+      "description": "After the third knock, the furniture inside freezes, and a tiny copy of the room appears on the windowsill.",
+      "imageKey": "quests/room-behind-glass/page-10.webp",
+      "options": [
+        {
+          "description": "Knock again",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Take the little room",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Empty Window",
+      "description": "The light goes out. Only a dark, empty room remains behind the glass.",
+      "imageKey": "quests/room-behind-glass/page-20.webp",
+      "options": [],
+      "endingId": "room-darkened",
+      "scenePatch": {
+        "description": "It is dark beyond the window, and no movement can be seen anymore.",
+        "imageKey": "locations/doorless-cottage/lit-window-dark.webp"
+      }
+    },
+    {
+      "number": 30,
+      "name": "House Within a House",
+      "description": "The miniature room stays lit, and its furniture continues to move almost imperceptibly.",
+      "imageKey": "quests/room-behind-glass/page-30.webp",
+      "options": [],
+      "endingId": "room-model-taken",
+      "lootButtonText": "Take the model",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "window-room-model"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

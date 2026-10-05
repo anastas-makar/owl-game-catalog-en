@@ -1,0 +1,11 @@
+{
+  "templateId": "hostile-vulture",
+  "name": "Hostile Vulture",
+  "description": "An unfriendly vulture with a large beak.",
+  "imageKey": "enemies/hostile-vulture.webp",
+  "health": 300,
+  "damage": 300,
+  "tags": [
+    "bird"
+  ]
+}

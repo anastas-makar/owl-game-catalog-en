@@ -1,0 +1,10 @@
+{
+  "templateId": "garden-beehive",
+  "name": "Beehive",
+  "description": "A garden beehive that produces honey.",
+  "imageKey": "garden-items/garden-beehive.webp",
+  "supplyTemplateId": "honey",
+  "supplyAmount": 1,
+  "itemType": "HIVE",
+  "gardenType": "GARDEN"
+}

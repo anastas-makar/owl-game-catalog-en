@@ -1,0 +1,51 @@
+{
+  "templateId": "lost-backpack",
+  "title": "Lost Backpack",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "By the Cold Campfire",
+      "description": "An old backpack lies beside the extinguished campfire. You can examine it or walk past.",
+      "imageKey": "quests/lost-backpack/page-10.webp",
+      "options": [
+        {
+          "description": "Examine the backpack",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Leave it alone and go",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Useful Find",
+      "description": "Inside is a neatly written recipe and a few diamonds.",
+      "imageKey": "quests/lost-backpack/page-20.webp",
+      "options": [],
+      "endingId": "found-backpack",
+      "lootButtonText": "Take the find",
+      "lootBundle": {
+        "recipeLoot": {
+          "templateIds": [
+            "carrot-soup-recipe"
+          ],
+          "amount": 1
+        },
+        "diamondLoot": {
+          "amount": 20
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Onward",
+      "description": "You decide not to linger and continue on your way.",
+      "imageKey": "quests/lost-backpack/page-30.webp",
+      "options": [],
+      "endingId": "walk-away"
+    }
+  ]
+}

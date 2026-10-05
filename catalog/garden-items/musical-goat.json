@@ -1,0 +1,14 @@
+{
+  "templateId": "musical-goat",
+  "name": "Musical Goat",
+  "description": "A goat from the conservatory. Produces milk best after a gentle scale.",
+  "imageKey": "garden-items/musical-goat.webp",
+  "supplyTemplateId": "milk",
+  "supplyAmount": 1,
+  "itemType": "ANIMAL_HOUSE",
+  "gardenType": "GARDEN",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD",
+    "SHOP"
+  ]
+}

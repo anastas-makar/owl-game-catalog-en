@@ -1,0 +1,12 @@
+{
+  "templateId": "tree-ring-table",
+  "name": "Tree Rings Table",
+  "imageKey": "furniture/tree-ring-table.png",
+  "price": 20,
+  "height": 0.200,
+  "width": 0.200,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}

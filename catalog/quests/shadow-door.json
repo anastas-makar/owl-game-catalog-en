@@ -1,0 +1,58 @@
+{
+  "templateId": "shadow-door",
+  "title": "Door Without a Door",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Dark Threshold",
+      "description": "Up close, the shadow seems deeper than the stone. The sound of wind and distant ringing comes from it. A piece of white chalk lies on the step nearby.",
+      "imageKey": "quests/shadow-door/page-10.webp",
+      "options": [
+        {
+          "description": "Step into the shadow",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Outline the shadow with chalk",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Unfamiliar Country",
+      "description": "For a moment, you find yourself beneath unfamiliar stars. Take one more step, and you are back on the staircase's upper landing.",
+      "imageKey": "quests/shadow-door/page-20.webp",
+      "options": [],
+      "endingId": "other-country-seen",
+      "lootButtonText": "Claim the reward",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 30
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Relocated Door",
+      "description": "When the chalk outline closes, the shadow separates from the stone and rolls up like a dark carpet.",
+      "imageKey": "quests/shadow-door/page-30.webp",
+      "options": [],
+      "endingId": "shadow-door-taken",
+      "scenePatch": {
+        "description": "Only a white chalk rectangle remains on the last step.",
+        "imageKey": "locations/stairway-to-nowhere/top-landing-empty.webp"
+      },
+      "lootButtonText": "Take the shadow",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "portable-shadow-door"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

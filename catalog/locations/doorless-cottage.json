@@ -1,0 +1,35 @@
+{
+  "templateId": "doorless-cottage",
+  "name": "Doorless House",
+  "description": "A small house stands in the middle of a field, with windows, a chimney, and perfectly smooth walls.",
+  "imageKey": "locations/doorless-cottage.webp",
+  "type": "LANDMARK",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "tags": ["plain", "glade"],
+  "scenes": [
+    {
+      "templateId": "lit-window",
+      "name": "Lit Window",
+      "description": "A cozy room is visible through the glass, but its furniture sometimes changes position.",
+      "imageKey": "locations/doorless-cottage/lit-window.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "room-behind-glass",
+      "questButtonText": "Knock on the window"
+    },
+    {
+      "templateId": "cold-chimney",
+      "name": "Cold Chimney",
+      "description": "Smoke rises from the chimney, although the bricks are completely cold.",
+      "imageKey": "locations/doorless-cottage/cold-chimney.webp",
+      "sceneNumber": 20
+    },
+    {
+      "templateId": "footprints-wall",
+      "name": "Tracks by the Wall",
+      "description": "A trail of tiny tracks ends right at the house's blank wall.",
+      "imageKey": "locations/doorless-cottage/footprints-wall.webp",
+      "sceneNumber": 30
+    }
+  ]
+}

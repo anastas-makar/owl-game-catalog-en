@@ -1,0 +1,20 @@
+{
+  "templateId": "whispering-waterfall",
+  "name": "Whispering Waterfall",
+  "description": "Water falls in thin streams, seeming to utter individual words.",
+  "imageKey": "locations/whispering-waterfall.webp",
+  "type": "WATERFALL",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "stone-ledge",
+      "name": "Ledge Behind the Water",
+      "description": "A narrow stone ledge can just be made out behind the curtain of water.",
+      "imageKey": "locations/whispering-waterfall/stone-ledge.webp",
+      "sceneNumber": 10,
+      "questTemplateId": "behind-the-water",
+      "questButtonText": "Step behind the waterfall"
+    }
+  ]
+}

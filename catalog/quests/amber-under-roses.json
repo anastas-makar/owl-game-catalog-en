@@ -1,0 +1,52 @@
+{
+  "templateId": "amber-under-roses",
+  "title": "Amber Beneath the Roses",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "What Glints in the Water",
+      "description": "A smooth piece of amber with a dark twig inside lies on the bottom. A copper valve glints in one wall of the pond.",
+      "imageKey": "quests/amber-under-roses/page-10.webp",
+      "options": [
+        {
+          "description": "Open the valve",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Try to reach the amber by hand",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Water for the Roses",
+      "description": "The water level falls rapidly. An amber paperweight remains on the exposed bottom. You take it and turn the valve again. The pond fills with water.",
+      "imageKey": "quests/amber-under-roses/page-20.webp",
+      "options": [],
+      "endingId": "amber-paperweight-found",
+      "scenePatch": {
+        "description": "The round pond is full of water again. The roses drop their petals into it.",
+        "imageKey": "locations/rose-terrace/rose-pond-after-amber.webp"
+      },
+      "lootButtonText": "Take the paperweight",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "amber-paperweight"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Deceptive Depth",
+      "description": "The bottom seems close, but your arm sinks into the water almost to your shoulder. Your fingers only brush the smooth amber, and it slips deeper between the stones.",
+      "imageKey": "quests/amber-under-roses/page-30.webp",
+      "options": [],
+      "endingId": "amber-out-of-reach"
+    }
+  ]
+}

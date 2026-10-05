@@ -1,0 +1,8 @@
+{
+  "templateId": "carp",
+  "name": "Chilled Carp",
+  "description": "Carp from the pond.",
+  "imageKey": "supplies/carp.webp",
+  "effectType": "HEAL",
+  "effectAmount": 10
+}

@@ -1,0 +1,12 @@
+{
+  "templateId": "swamp-rat",
+  "name": "Swamp Rat",
+  "description": "A small and relatively weak swamp opponent.",
+  "imageKey": "enemies/swamp-rat.png",
+  "health": 250,
+  "damage": 250,
+  "tags": [
+    "swamp",
+    "weak"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "templateId": "rope-under-pier",
+  "title": "Rope Beneath the Pier",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Heavy Knot",
+      "description": "The rope is taut, as though something heavy is tied to it.",
+      "imageKey": "quests/rope-under-pier/page-10.webp",
+      "options": [
+        {
+          "description": "Pull slowly",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Pull as hard as you can",
+          "targetPageNumber": 30
+        },
+        {
+          "description": "Untie the rope",
+          "targetPageNumber": 40
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "Glass Ball",
+      "description": "A net with an old glass fishing float emerges from the water.",
+      "imageKey": "quests/rope-under-pier/page-20.webp",
+      "options": [],
+      "endingId": "float-recovered",
+      "lootButtonText": "Take the float",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "glass-fishing-float"
+          ],
+          "amount": 1
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Broken Rope",
+      "description": "The rope snaps, and the weight sinks to the bottom.",
+      "imageKey": "quests/rope-under-pier/page-30.webp",
+      "options": [],
+      "endingId": "rope-snapped",
+      "scenePatch": {
+        "description": "A short scrap of wet rope dangles from the post.",
+        "imageKey": "locations/foggy-pier/rope-snapped.webp"
+      }
+    },
+    {
+      "number": 40,
+      "name": "In the Fog",
+      "description": "The freed rope quickly slips underwater and disappears.",
+      "imageKey": "quests/rope-under-pier/page-40.webp",
+      "options": [],
+      "endingId": "rope-released"
+    }
+  ]
+}

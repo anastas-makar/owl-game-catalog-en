@@ -1,0 +1,58 @@
+{
+  "templateId": "silent-bell",
+  "title": "Silent Bell",
+  "startPageNumber": 10,
+  "pages": [
+    {
+      "number": 10,
+      "name": "Soundless Glass",
+      "description": "The bell is cold and perfectly still, even in the wind.",
+      "imageKey": "quests/silent-bell/page-10.webp",
+      "options": [
+        {
+          "description": "Tap the rim gently",
+          "targetPageNumber": 20
+        },
+        {
+          "description": "Remove the bell from the ribbon",
+          "targetPageNumber": 30
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "name": "One Pure Note",
+      "description": "A single clear note sounds, and the bell crumbles into glowing dust.",
+      "imageKey": "quests/silent-bell/page-20.webp",
+      "options": [],
+      "endingId": "bell-rang",
+      "lootButtonText": "Gather the glow",
+      "lootBundle": {
+        "diamondLoot": {
+          "amount": 25
+        }
+      }
+    },
+    {
+      "number": 30,
+      "name": "Crystal Bell",
+      "description": "The knot comes undone easily. In your hands, the bell becomes ordinary and rings again.",
+      "imageKey": "quests/silent-bell/page-30.webp",
+      "options": [],
+      "endingId": "bell-taken",
+      "scenePatch": {
+        "description": "An empty space remains among the colored ribbons.",
+        "imageKey": "locations/wind-pavilion/bell-removed.webp"
+      },
+      "lootButtonText": "Take the bell",
+      "lootBundle": {
+        "furnitureLoot": {
+          "templateIds": [
+            "crystal-bell"
+          ],
+          "amount": 1
+        }
+      }
+    }
+  ]
+}

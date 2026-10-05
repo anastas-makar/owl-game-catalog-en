@@ -1,0 +1,8 @@
+{
+  "templateId": "carrot-soup",
+  "name": "Carrot Soup",
+  "description": "A simple hot carrot soup with a spoonful of honey.",
+  "imageKey": "supplies/carrot-soup.webp",
+  "effectType": "HEAL",
+  "effectAmount": 180
+}

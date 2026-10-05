@@ -1,0 +1,34 @@
+{
+  "templateId": "foxglove-ravine",
+  "name": "Foxglove Ravine",
+  "description": "The slopes of a deep ravine are overgrown with tall purple flowers.",
+  "imageKey": "locations/foxglove-ravine.webp",
+  "type": "PARK",
+  "buildPrice": null,
+  "allowedAcquisitionSources": [],
+  "scenes": [
+    {
+      "templateId": "flower-slope",
+      "name": "Flowering Slope",
+      "description": "The foxglove bells sway without wind, as though talking to one another.",
+      "imageKey": "locations/foxglove-ravine/flower-slope.webp",
+      "sceneNumber": 10
+    },
+    {
+      "templateId": "fallen-bridge",
+      "name": "Fallen Footbridge",
+      "description": "An old footbridge lies across a stream, covered entirely in soft moss.",
+      "imageKey": "locations/foxglove-ravine/fallen-bridge.webp",
+      "sceneNumber": 20
+    },
+    {
+      "templateId": "herbalists-stone",
+      "name": "Herbalist's Stone",
+      "description": "Dried herbs and a small amber object are laid out on a flat stone.",
+      "imageKey": "locations/foxglove-ravine/herbalists-stone.webp",
+      "sceneNumber": 30,
+      "questTemplateId": "herbalists-keepsake",
+      "questButtonText": "Examine the find"
+    }
+  ]
+}

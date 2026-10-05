@@ -1,0 +1,12 @@
+{
+  "templateId": "window-room-model",
+  "name": "Room Behind Glass",
+  "imageKey": "furniture/window-room-model.png",
+  "price": 10,
+  "height": 0.150,
+  "width": 0.150,
+  "type": "OTHER",
+  "allowedAcquisitionSources": [
+    "QUEST_REWARD"
+  ]
+}
